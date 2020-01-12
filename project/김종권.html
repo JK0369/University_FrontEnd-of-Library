@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JK 도서관</title>
+
+<style>
+
+.font-format{font-size:35px; font-family : "Times New Roman", Serif;}
+
+a{text-decoration:none; color:rgba(200, 20, 20, 0.9);}
+/**{border:1px solid green;}*/
+
+#left_aside{
+	display:inline-block;
+	float:left;
+}
+#right_aside{
+	float:right;
+	display:inline-block;
+}
+
+article{
+	clear:both;
+}
+
+ol{
+	list-style-position : inside;
+}
+
+section ol{
+	list-style-type : none;
+	padding:0;
+	margin:0;
+	width:300px;
+	position:relative; 
+	left:470px;
+}
+
+section li{
+	border : 1px solid darkkhaki;
+	background : khaki;
+	padding:0;
+	font-family : "Times New Roman", Serif;
+}
+
+#menubar {
+	float:left;
+	display:inline-block;
+	background : olive;
+}
+#menubar ul {
+	margin : 0;
+	padding : 0;
+	width : 567px;
+}
+#menubar ul li {
+	display : inline-block;
+	list-style-type : none; 
+	padding : 0px 15px;	
+}
+#menubar ul li a {
+	color : white;
+	text-decoration : none; 
+}
+#menubar ul li a:hover {
+	color : violet; 
+}
+
+article div{
+	 background:linen;
+	 width:350px;
+	 position:relative;
+	 left:450px;
+	 font : italic bold 30px consolas, sans-serif;
+	 color:green;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+	<table width=100% id="top">
+		<tr>
+			<td width=10% align=center><img src="img/bookLogo.gif" width=100 height=100 alt="표시안됨" /></td>
+
+			<td width=70% align=center class="font-format"><h2>종권 도서관<h2></td>
+			<td>
+
+				<H6>
+					<table align=center border=0 cellpadding=1 cellspacing="1"
+						bordercolor="#999999" width=80>
+						
+							<form method="post">
+								<tr align=left bgcolor=white>
+									<td><img src="img/id.gif"/></td>
+									<td><input type="text" placeholder="Jongkwon" size=15></td>
+									<td><input type="submit" value="로그인"></td>	
+								</tr>
+							
+							<tr align=left bgcolor=white>
+								<td><img src="img/password.gif" /></td>
+								<td><input type="password" value="0000" size=15></td>
+								<td> 
+								<input type="submit" value="회원가입">
+								</td>								
+							</tr>
+						</form>
+					</table>
+				</h6>
+			</td>
+		</tr>
+	</table>
+
+	<table width=100%>
+	<tr> <!-- 앵커 사용-->
+		<td width=100% align=center><a href="#menubar"><img src="img/Library.gif" width=100% height=500 alt="표시안됨" /></a></td>
+	</tr>
+	</table>
+</header>
+
+<hr>
+<br> 
+
+<aside id="left_aside" >
+	<img src="img/left.png" alt="왼쪽정보" width="330" height="140">
+</aside>
+
+<!-- 리스트 사용-->
+<nav id="menubar" style="position:relative; top:37px;">
+	<div align="center" style="color:beige; font-size:30px;">도서관 정보</div>
+	<ul>
+		<li><a href="#poem">시</a></li>
+		<li><a href="#fiction">소설</a></li>
+		<li><a href="#best">베스트셀러</a></li>
+		<li><a href="#today">오늘의 추천도서</a></li>
+		<li><a href="#info">홈페이지 정보</a></li>
+	</ul>
+</nav>
+
+
+
+<aside id="right_aside" width="300" height=100>
+	<img src="img/right.png" alt="오른쪽정보" width="350" height="140">
+</aside>
+
+<!-- 메인 정보-->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+
+<section id="main_section" align="center">
+		<article id="poem">
+			<div>&lt;시&gt;</div>
+				<ol>
+					<li>별과 시
+					<li>지금 이대로 좋다
+					<li>비트리올
+					<li>산과 강물과 시
+				</ol>
+		</article>
+
+		<br><hr><br>
+
+		<article id="fiction">
+		<div> &lt;소설&gt;</div>
+				<ol>
+					<li>곰스크로 가는 기차
+					<li>기차여행
+					<li>공중그네
+					<li>어린왕자
+				</ol>
+		</article>
+
+		<br><hr><br>
+
+		<article id="best">
+		<div>&lt;베스트셀러&gt;</div>
+			<table  align="center" border="3">
+				<tr> <td><a href = "img/best1.png" target="my_frame">
+				<img src="img/best1.png" width="150" height="100">
+				</a></td> 
+				<td><a href = "img/best2.png" target="my_frame">
+				<img src="img/best2.png" width="150" height="100">
+				</a></td> 
+				<td><a href = "img/best3.png" target="my_frame">
+				<img src="img/best3.png" width="150" height="100">
+				</a></td> </tr>
+				<tr> <td colspan="3"> 
+				<iframe src="" width="470" height="390" name="my_frame"/></iframe>
+		 	</td></tr>
+			</table>
+		</article>
+		<br><hr><br>
+		<article id="today">
+			<div > 오늘의 추천도서</div>
+			<table  align="center" border="2">
+				<tr><td colspan="2">
+					<video id="video" src="video/today.mp4" weight="600" height="200" alt="동영상 부분" controls autoplay></video>
+					</td></tr>
+				<tr><td>7가지 추천 도서</td></tr>
+			</table>
+		</article>
+</section>
+
+<hr>
+
+<!-- 하단 : 출처와 홈페이지 관리자 정보-->
+<footer align="center">
+	<a href="#top">맨 위로 이동</a><br>
+	<div id="info">
+	홈페이지 관리자 - 김종권<br>
+	이메일 - palatable7@naver.com
+	</div>
+</footer>
+</body>
+</html>
